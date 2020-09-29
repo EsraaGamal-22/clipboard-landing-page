@@ -52,12 +52,8 @@ button{
     border: none;
     border-bottom-style: solid;
     border-bottom-width: 3px;
-    transition: width 1s, height 1s , font-size 1s;
 }
 button:hover{
-    width:72%;
-    height:70%;
-    font-size:1.2rem;
     cursor: pointer;
     outline:none;
     border:none;
@@ -158,23 +154,25 @@ button + button{
 }
 .foot-container{
     margin-top: 9em;
-    padding:3em 0;
+    padding:3em 0 5em 0;
     background-color:rgb(241, 241, 241) ;
+}
+.container-1{
+    width:80%;
+    margin:0 auto;
+}
+.roww{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .logo-footer{
     width:5%;
-    height:6%;
 }
 .content-footer{
-    width:80%;
-    margin:0 5.5em;
+    width:60%;
 }
-.container-1{
-    width:95%;
-    padding-left: 7em;
-    margin: 0 auto;
-    /*background-color: teal;*/
-}
+
 .list-foot{
     margin-top: 0;
     list-style: none;
@@ -188,16 +186,16 @@ li+ li{
 }
 .row-1{
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .social{
-    width:30%;
-    margin:1.3em 0 1em 7em;
+    width:13%;
 }
-
 .fab{
    color:#4C545C;
    font-size:1.7rem;
-   margin: 0 0.5em 0 0;
+   margin: 0 1em 0 0;
 }
 .fab:hover{
     color:hsl(171, 66%, 44%);
@@ -273,18 +271,19 @@ li+ li{
        text-align: center;
     }
     .container-1{
-        padding-left:0;
+        width:90%;
         text-align: center;
     }
     .logo-footer{
-        width:13%;
-        height:13%;
+        width:10%;
+    }
+    .roww{
+        display: block;
     }
     .content-footer{
         margin:0 auto;
         padding:1.5em 0 ;
     }
-
     .list-foot {
         margin-right: 2em;
     }
@@ -292,7 +291,11 @@ li+ li{
         margin-left: 0;
     }
     .social{
+        width:55%;
         margin:0 auto;
+    }
+    .fab{
+        margin:0 0.7em;
     }
 }
 
@@ -302,9 +305,6 @@ li+ li{
     .container{
         width:90%;
     }
-    .fab{
-        margin: 0 0.8em 0 0;
-     }
 }
 @media(min-width:600px)and (max-width:899px)
 {
@@ -315,9 +315,6 @@ li+ li{
         width:60%;
         margin:3em auto 0 auto;
     }
-    .fab{ 
-        margin: 0 0.8em ;
-     }
 }
 @media(min-width:900px) and (max-width:1200px)
 {
@@ -326,9 +323,6 @@ li+ li{
  }
  .devices-imgg{
      width:100%;
- }
- .container-1{
-     padding-left: 4em;
  }
  .content-footer{
      width:95%;
